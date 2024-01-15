@@ -1,66 +1,228 @@
-body{
+body {
     font-family: 'Mulish', sans-serif;
-    margin: 0px;
+    margin: auto;
 }
-h1,h2,h3,h4,h5,h6,p{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0px;
     padding: 0px;
 }
-.header{}
-.navbar{
+
+.header {}
+
+.navbar {
     display: flex;
     justify-content: space-between;
     margin-top: 52px;
     align-items: center;
 }
-.logo{
+
+.logo {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
 }
-.logo img{
+
+.logo img {
     width: 48px;
     height: 56px;
 }
-.logo h1{
+
+.logo h1 {
     margin-left: 16px;
     text-transform: capitalize;
 }
-.logo-black{
+
+.logo-black {
     color: #131318;
-font-size: 36px;
-font-weight: 800;
-text-transform: uppercase;
-}
-.logo-org{
-    color: #FF5400;
-font-size: 36px;
-font-weight: 800;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: uppercase;
 }
 
-.nav{
+.logo-org {
+    color: #FF5400;
+    font-size: 36px;
+    font-weight: 800;
+}
+.responsive-nav{
+    display: none;
+}
+
+.nav {
     margin-right: 10px;
 }
-#nav-select{
+
+#nav-select {
     color: #FF5400;
     text-align: center;
     font-size: 18px;
     font-weight: 700;
 }
-.nav nav{}
-.nav nav ul{
+
+.nav nav {}
+
+.nav nav ul {
     display: flex;
     gap: 44px;
 }
-.nav nav ul li{
+
+.nav nav ul li {
     list-style: none;
 }
-.nav nav ul li a{
+
+.nav nav ul li a {
     text-decoration: none;
     text-transform: capitalize;
     color: var(--Dark-02, #424247);
-text-align: center;
-font-size: 18px;
-font-weight: 400;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.banner {
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    background-image: url(../Images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg {
+    width: 100%;
+    height: 500px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner-content-hading {
+    text-align: center;
+    width: 676px;
+}
+
+.banner-content-hading h1 {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.banner-content-hading p {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 27px;
+    margin-bottom: 48px;
+}
+
+.banner-content-input {
+    display: grid;
+    grid-template-columns: repeat(4, 174px);
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 24px;
+}
+
+.banner-content-input input {
+    height: 52px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+.btn-praimary {
+    border-radius: 8px;
+    background: #FF5400;
+    width: 174px;
+    height: 52px;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.banner-content-input select {
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 10px;
+    height: 52px;
+}
+
+.banner-content-input option {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/* max-width----600-responsive */
+@media screen and (max-width:600px) {
+    .navbar{
+    }
+    .nav{
+        display: none;
+    }
+    .responsive-nav{
+        display: unset;
+        margin-right: 18px;
+    }
+    .banner{
+        height: auto;
+    }
+    .bg{
+        height: auto;
+    }
+    .banner-content-input{
+        grid-template-columns: repeat(1, 90%);
+        width: 78%;
+        justify-content: center;
+    }
+    .btn-praimary{
+        width: 100%;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-content-hading{
+        width: 100%;
+    }
+    .banner-content-hading h1{
+        font-size: 22px;
+        margin-top: 32px;
+        margin-bottom: 8px;
+    }
+    .logo-black,.logo-org{
+        font-size: 21px;
+    }
+    .logo img{
+        width: 28px;
+        height: 33px;
+    }
 }
