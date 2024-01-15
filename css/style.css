@@ -14,7 +14,10 @@ p {
     padding: 0px;
 }
 
-.header {}
+.header {
+    width: 99%;
+    margin: auto;
+}
 
 .navbar {
     display: flex;
@@ -52,7 +55,8 @@ p {
     font-size: 36px;
     font-weight: 800;
 }
-.responsive-nav{
+
+.responsive-nav {
     display: none;
 }
 
@@ -177,6 +181,161 @@ p {
     overflow: hidden;
 }
 
+.popular-tours {
+    margin-top: 100px;
+    display: flex;
+    gap: 9%;
+    align-items: center;
+}
+
+.tours-content {
+    width: 45%;
+    margin-left: 10px;
+}
+
+.tours-content h1 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.tours-content p {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tours-content ul {}
+
+.tours-content ul li {
+    margin-top: 16px;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.tours-images {
+    width: 45%;
+    margin-right: 10px;
+}
+
+.tours-images img {
+    width: 100%;
+}
+
+.gap-50 {
+    margin-bottom: 50px;
+}
+
+.destination {
+    margin: 113px auto 0px auto;
+    width: 98%;
+}
+
+.destination-hading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.destination-hading h1 {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.destination-hading p {
+    width: 643px;
+    margin-top: 24px;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.destination-images{}
+
+.images-box1{
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    gap: 24px;
+
+}
+.maldives{
+    background: url(../Images/maldives.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.Indonesia{
+    background: url(../Images/Indonesia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.bg-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    height: 100%;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.images-box2{
+    display: grid;
+    grid-template-columns: repeat(3, 28% 38% 28%);
+    gap: 24px;
+    margin-top: 24px;
+}
+.srilanka{
+    background: url(../Images/srilanka.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.North-America{
+    background: url(../Images/north-america.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.Kashmir{
+    background: url(../Images/kashmir.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+.images-box3{
+    display: grid;
+    grid-template-columns: repeat(2, 38% 59%);
+    gap: 24px;
+    margin-top: 24px;
+}
+.bangladesh{
+    background: url(../Images/bangladesh.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+.Bandarban{
+    background: url(../Images/bandarban.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -184,45 +343,80 @@ p {
 
 /* max-width----600-responsive */
 @media screen and (max-width:600px) {
-    .navbar{
-    }
-    .nav{
+    .navbar {}
+
+    .nav {
         display: none;
     }
-    .responsive-nav{
+
+    .responsive-nav {
         display: unset;
         margin-right: 18px;
     }
-    .banner{
+
+    .banner {
         height: auto;
     }
-    .bg{
+
+    .bg {
         height: auto;
     }
-    .banner-content-input{
+
+    .banner-content-input {
         grid-template-columns: repeat(1, 90%);
         width: 78%;
         justify-content: center;
     }
-    .btn-praimary{
+
+    .btn-praimary {
         width: 100%;
     }
-    .banner-content{
+
+    .banner-content {
         width: 100%;
     }
-    .banner-content-hading{
+
+    .banner-content-hading {
         width: 100%;
     }
-    .banner-content-hading h1{
+
+    .banner-content-hading h1 {
         font-size: 22px;
         margin-top: 32px;
         margin-bottom: 8px;
     }
-    .logo-black,.logo-org{
+
+    .logo-black,
+    .logo-org {
         font-size: 21px;
     }
-    .logo img{
+
+    .logo img {
         width: 28px;
         height: 33px;
+    }
+
+    .popular-tours {
+        margin-top: 24px;
+        flex-direction: column;
+        width: 95%;
+        margin: 24px auto 0px auto;
+    }
+
+    .tours-content {
+        width: 100%;
+    }
+
+    .tours-content h1 {
+        font-size: 20px;
+    }
+
+    .tours-images {
+        width: 96%;
+        margin: 24px auto 0px auto;
+    }
+
+    #btn-width {
+        width: 39%;
     }
 }
