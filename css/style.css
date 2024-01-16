@@ -268,12 +268,14 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
+    border-radius: 16px;
 }
 .Indonesia{
     background: url(../Images/Indonesia.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
+    border-radius: 16px;
 }
 .bg-2{
     display: flex;
@@ -297,18 +299,21 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
+    border-radius: 16px;
 }
 .North-America{
     background: url(../Images/north-america.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
+    border-radius: 16px;
 }
 .Kashmir{
     background: url(../Images/kashmir.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
+    border-radius: 16px;
 }
 
 .images-box3{
@@ -322,12 +327,14 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
+    border-radius: 16px;
 }
 .Bandarban{
     background: url(../Images/bandarban.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
+    border-radius: 16px;
 }
 
 
@@ -419,4 +426,18 @@ p {
     #btn-width {
         width: 39%;
     }
+    .destination-hading h1{
+        font-size: 20px;
+    }
+    .destination-hading p{
+    width: 90%;
+    font-size: 14px;
+}
+.images-box1,.images-box2,.images-box3{
+    grid-template-columns: repeat(1, 90%);
+    justify-content: center;
+}
+.maldives,.Indonesia,.srilanka,.North-America,.Kashmir,.bangladesh,.Bandarban{
+    height: 175px;
+}
 }
