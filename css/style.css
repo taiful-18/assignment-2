@@ -374,7 +374,7 @@ p {
 
 .chose-box-1 {
     display: grid;
-    grid-template-columns: repeat(2, 573px);
+    grid-template-columns: repeat(2, 46%);
     gap: 24px;
     justify-content: center;
     align-items: center;
@@ -442,7 +442,7 @@ p {
 
 .chose-price {
     height: 284px;
-    width: 573px;
+    width: 46%;
     margin: auto;
     border-radius: 16px;
     border: 1px solid rgba(233, 68, 68, 0.20);
@@ -470,7 +470,63 @@ p {
     font-weight: 400;
 }
 
+.simple-perfect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    margin-top: 113px;
+}
+.simple-content{
+    width: 47%;
+}
+.simple-content h1{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    width: 448px;
+    line-height: 60px;
+    margin-bottom: 24px;
+}
+.simple-content p{
+    color: #5A5A5D;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+}
+.simple-content ul{}
+.simple-content ul li{
+    color: #131318;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    margin-top: 16px;
+}
+.simple-content button{
+    margin-top: 33px;
+}
+.simple-images{
+    width: 47%;
+    text-align: center;
+    background: url(../Images/group40089.png);
+    height: 424px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+.s-c-images{
 
+color: #FFF;
+
+font-size: 24px;
+
+font-weight: 700;
+
+ /* 150% */
+
+width: 276px;
+}
 
 
 
@@ -605,4 +661,29 @@ p {
         height: auto;
         padding-bottom: 32px;
     }
+    .simple-perfect{
+        flex-direction: column;
+        margin-top: 24px;
+        align-items: normal;
+    }
+    .simple-content h1{
+        width: 56%;
+        font-size: 20px;
+        margin-left: 20px;
+        line-height: 24px;
+    }
+    .simple-content{
+    width: 100%;
+}
+.simple-content p{
+    margin-left: 20px;
+}
+.simple-content button{
+    width: 33%;
+    margin-left: 20px;
+}
+.simple-images{
+    width: 95%;
+    margin: auto;
+}
 }
