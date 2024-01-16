@@ -470,17 +470,19 @@ p {
     font-weight: 400;
 }
 
-.simple-perfect{
+.simple-perfect {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 28px;
     margin-top: 113px;
 }
-.simple-content{
+
+.simple-content {
     width: 47%;
 }
-.simple-content h1{
+
+.simple-content h1 {
     color: #131318;
     font-size: 40px;
     font-weight: 800;
@@ -488,45 +490,122 @@ p {
     line-height: 60px;
     margin-bottom: 24px;
 }
-.simple-content p{
+
+.simple-content p {
     color: #5A5A5D;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
 }
-.simple-content ul{}
-.simple-content ul li{
+
+.simple-content ul {}
+
+.simple-content ul li {
     color: #131318;
     font-size: 16px;
     font-weight: 700;
     line-height: 26px;
     margin-top: 16px;
 }
-.simple-content button{
+
+.simple-content button {
     margin-top: 33px;
 }
-.simple-images{
+
+.simple-images {
     width: 47%;
     text-align: center;
     background: url(../Images/group40089.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 424px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 16px;
 }
-.s-c-images{
 
-color: #FFF;
+.s-c-images {
 
-font-size: 24px;
+    color: #FFF;
 
-font-weight: 700;
+    font-size: 24px;
 
- /* 150% */
+    font-weight: 700;
 
-width: 276px;
+    width: 276px;
 }
+.newsletter{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 46%);
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter-input{border-radius: 16px;border: 1px solid #FF5400;padding-left: 24px;padding-top: 24px;padding-bottom: 24px;}
+.newsletter-input p{
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+     /* 162.5% */
+    width: 75%;
+}
+.newsletter-input h1{
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+.n-input{
+    display: grid;
+    grid-template-rows: repeat(3, 52px);
+    gap: 16px;
+    margin-top: 48px;
+}
+.n-input input{
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    outline: none;
+    border: none;
+    padding-left: 20px;
+    width: 90%;
+}
+.n-input button{
+    width: 94%;
+}
+.newsletter-images{
+    height: 422px;
+    width: 100%;
+    background: url(../Images/rectangle8.png);
+    border-radius: 16px;
+}
+.discount-news{
+    border-radius: 16px;
+    background: #FF5400;
+    width: 277px;
+    height: 115px;
+    transform: rotate(-19.628deg);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 255px;
+    left: 173px;
+}
+.discount-news h5{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 400;
+}
+.discount-news h3{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 100;
+}
+
+
 
 
 
@@ -657,33 +736,53 @@ width: 276px;
         margin-top: 16px;
     }
 
-    .chose-map ,.chose-hotel,.chose-mapgi{
+    .chose-map,
+    .chose-hotel,
+    .chose-mapgi {
         height: auto;
         padding-bottom: 32px;
     }
-    .simple-perfect{
+
+    .simple-perfect {
         flex-direction: column;
         margin-top: 24px;
         align-items: normal;
     }
-    .simple-content h1{
+
+    .simple-content h1 {
         width: 56%;
         font-size: 20px;
         margin-left: 20px;
         line-height: 24px;
     }
-    .simple-content{
-    width: 100%;
+
+    .simple-content {
+        width: 100%;
+    }
+
+    .simple-content p {
+        margin-left: 20px;
+    }
+
+    .simple-content button {
+        width: 33%;
+        margin-left: 20px;
+    }
+
+    .simple-images {
+        width: 95%;
+        margin: auto;
+    }
+    .newsletter{
+        grid-template-columns: repeat(1, 90%);
+    }
+    .discount-news{
+    left: 128px;
+    top: 159px;
+    width: 70%;
+    height: 31%;
 }
-.simple-content p{
-    margin-left: 20px;
-}
-.simple-content button{
-    width: 33%;
-    margin-left: 20px;
-}
-.simple-images{
-    width: 95%;
-    margin: auto;
+.newsletter-images{
+    height: 300px;
 }
 }
