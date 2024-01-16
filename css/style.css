@@ -535,20 +535,24 @@ p {
 
     width: 276px;
 }
-.our-blog{
+
+.our-blog {
     margin-top: 100px;
 }
-.blog-header{
+
+.blog-header {
     text-align: center;
 }
-.blog-header h1{
+
+.blog-header h1 {
     color: #131318;
     font-size: 40px;
     font-weight: 800;
     margin-bottom: 24px;
     text-transform: capitalize;
 }
-.blog-header p{
+
+.blog-header p {
     width: 643px;
     margin: auto;
     color: rgba(19, 19, 24, 0.70);
@@ -556,35 +560,41 @@ p {
     font-weight: 400;
     margin-bottom: 48px;
 }
-.blog-content{
-}
-.blog-box-1{
+
+.blog-content {}
+
+.blog-box-1 {
     display: grid;
     grid-template-columns: repeat(3, 29% 39% 29%);
     gap: 10px;
 }
-.blog-1{
+
+.blog-1 {
     background: url(../Images/blog-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 16px;
 }
-.blog-1{
+
+.blog-1 {
     height: 300px;
 }
-.blog-2{
+
+.blog-2 {
     background: url(../Images/blog-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 16px;
 }
-.blog-3{
+
+.blog-3 {
     border-radius: 16px;
     background: url(../Images/blog-3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.video-bg{
+
+.video-bg {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -594,23 +604,27 @@ p {
     gap: 10px;
     border-radius: 16px;
 }
-.video-bg img{
+
+.video-bg img {
     width: 20%;
 }
-.blog-box-2{
+
+.blog-box-2 {
     display: grid;
     grid-template-columns: repeat(2, 46%);
     justify-content: center;
     gap: 10px;
     margin-top: 10px;
 }
-.blog-4{
+
+.blog-4 {
     border-radius: 16px;
     background: url(../Images/blog-4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.blog-5{
+
+.blog-5 {
     border-radius: 16px;
     background: url(../Images/blog-5.jpg);
     background-repeat: no-repeat;
@@ -935,5 +949,15 @@ p {
 
     .footer-content p {
         width: 100%;
+    }
+
+    .blog-header p {
+        width: 100%;
+    }
+
+    .blog-box-1,
+    .blog-box-2 {
+        grid-template-columns: repeat(1, 90%);
+        justify-content: center;
     }
 }
