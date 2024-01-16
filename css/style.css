@@ -492,7 +492,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     width: 97%;
-    margin: auto;
+    margin: 24px auto;
     height: 500px;
     display: flex;
     align-items: center;
@@ -507,6 +507,7 @@ p {
     backdrop-filter: blur(2.5px);
     height: 380px;
     margin-right: 56px;
+    margin-left: 56px;
 }
 .deals-box-1{
     display: grid;
@@ -564,6 +565,12 @@ p {
     margin-top: 24px;
 }
 
+#deals-2-imgcng{
+    background: url(../Images/group44.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: left;
+}
 
 
 
