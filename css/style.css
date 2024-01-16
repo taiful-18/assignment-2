@@ -769,7 +769,7 @@ p {
 }
 
 /* max-width----600-responsive */
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     .navbar {}
 
     .nav {
@@ -937,8 +937,8 @@ p {
     }
 
     .discount-news {
-        left: 128px;
-        top: 159px;
+        left: 123px;
+        top: 140px;
         width: 70%;
         height: 31%;
     }
@@ -960,4 +960,27 @@ p {
         grid-template-columns: repeat(1, 90%);
         justify-content: center;
     }
+}
+
+@media screen and (max-width:470px) {
+    .discount-news{
+    left: 84px;
+}
+.discount-news h5{
+    font-size: 17px;
+}
+.discount-news h3{
+    font-size: 23px;
+}
+}
+@media screen and (max-width:332px) {
+    .discount-news{
+    left: 53px;
+}
+.discount-news h5{
+    font-size: 17px;
+}
+.discount-news h3{
+    font-size: 23px;
+}
 }
