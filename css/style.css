@@ -535,7 +535,94 @@ p {
 
     width: 276px;
 }
-.newsletter{
+.our-blog{
+    margin-top: 100px;
+}
+.blog-header{
+    text-align: center;
+}
+.blog-header h1{
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    text-transform: capitalize;
+}
+.blog-header p{
+    width: 643px;
+    margin: auto;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 48px;
+}
+.blog-content{
+}
+.blog-box-1{
+    display: grid;
+    grid-template-columns: repeat(3, 29% 39% 29%);
+    gap: 10px;
+}
+.blog-1{
+    background: url(../Images/blog-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+}
+.blog-1{
+    height: 300px;
+}
+.blog-2{
+    background: url(../Images/blog-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+}
+.blog-3{
+    border-radius: 16px;
+    background: url(../Images/blog-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.video-bg{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background: #36549761;
+    gap: 10px;
+    border-radius: 16px;
+}
+.video-bg img{
+    width: 20%;
+}
+.blog-box-2{
+    display: grid;
+    grid-template-columns: repeat(2, 46%);
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.blog-4{
+    border-radius: 16px;
+    background: url(../Images/blog-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blog-5{
+    border-radius: 16px;
+    background: url(../Images/blog-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+.newsletter {
     margin-top: 100px;
     display: grid;
     grid-template-columns: repeat(2, 46%);
@@ -543,26 +630,37 @@ p {
     justify-content: center;
     align-items: center;
 }
-.newsletter-input{border-radius: 16px;border: 1px solid #FF5400;padding-left: 24px;padding-top: 24px;padding-bottom: 24px;}
-.newsletter-input p{
+
+.newsletter-input {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.newsletter-input p {
     color: #5A5A5D;
     font-size: 16px;
     font-weight: 400;
-     /* 162.5% */
+    /* 162.5% */
     width: 75%;
 }
-.newsletter-input h1{
+
+.newsletter-input h1 {
     color: #131318;
     font-size: 24px;
     font-weight: 800;
 }
-.n-input{
+
+.n-input {
     display: grid;
     grid-template-rows: repeat(3, 52px);
     gap: 16px;
     margin-top: 48px;
 }
-.n-input input{
+
+.n-input input {
     border-radius: 8px;
     background: rgba(19, 19, 24, 0.05);
     outline: none;
@@ -570,16 +668,19 @@ p {
     padding-left: 20px;
     width: 90%;
 }
-.n-input button{
+
+.n-input button {
     width: 94%;
 }
-.newsletter-images{
+
+.newsletter-images {
     height: 422px;
     width: 100%;
     background: url(../Images/rectangle8.png);
     border-radius: 16px;
 }
-.discount-news{
+
+.discount-news {
     border-radius: 16px;
     background: #FF5400;
     width: 277px;
@@ -594,21 +695,64 @@ p {
     top: 255px;
     left: 173px;
 }
-.discount-news h5{
+
+.discount-news h5 {
     color: #FFF;
     font-size: 24px;
     font-weight: 400;
 }
-.discount-news h3{
+
+.discount-news h3 {
     color: #FFF;
     font-size: 32px;
     font-weight: 100;
 }
 
+.footer {
+    margin-top: 100px;
+}
 
+.footer-bg {
+    background: rgba(19, 19, 24, 0.05);
+}
 
+.footer-content {
+    text-align: center;
+}
 
+.footer-content p {
+    width: 670px;
+    margin: 15px auto 33px auto;
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
 
+.icon-groop {
+    margin-bottom: 50px;
+}
+
+.icon-groop img {}
+
+.footer-copyright {
+    width: 60%;
+    border-top: 1px solid rgb(19 19 24 / 26%);
+    margin: auto;
+    text-align: center;
+}
+
+.footer-copyright p {
+    padding-top: 50px;
+    padding-bottom: 110px;
+}
+
+.footer-copyright p small {}
+
+#footer-logo {
+    padding-top: 110px;
+}
 
 /* max-width----600-responsive */
 @media screen and (max-width:600px) {
@@ -773,16 +917,23 @@ p {
         width: 95%;
         margin: auto;
     }
-    .newsletter{
+
+    .newsletter {
         grid-template-columns: repeat(1, 90%);
     }
-    .discount-news{
-    left: 128px;
-    top: 159px;
-    width: 70%;
-    height: 31%;
-}
-.newsletter-images{
-    height: 300px;
-}
+
+    .discount-news {
+        left: 128px;
+        top: 159px;
+        width: 70%;
+        height: 31%;
+    }
+
+    .newsletter-images {
+        height: 300px;
+    }
+
+    .footer-content p {
+        width: 100%;
+    }
 }
